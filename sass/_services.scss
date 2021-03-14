@@ -1,0 +1,34 @@
+.services {
+    margin: {bottom:  10%;
+  
+    }
+
+    article {
+        margin-left: 5%;
+    }
+
+    .icon {
+        color: $primary;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .fa-2x{
+font-size: 1em;
+    }
+
+}
+#service__section{
+    animation-delay: 5000;
+}
+@media only screen and (max-width: 575.98px) {
+   
+         .services__content{
+        margin-right: 50%;
+        width: 200vw;
+       p{
+           width:50vh;
+           word-break: break-all;
+       }
+       
+    }
+}

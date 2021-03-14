@@ -1,0 +1,38 @@
+.footer h2 {
+    color: gray;
+}
+
+.roboto {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 3%;
+}
+
+.footer a {
+    color: black;
+}
+.instgram{
+    margin-left: 8%;
+}
+.footer {
+    article{
+        span{
+            color: $primary;
+        }
+        button{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}
+.scroll{
+    float: right;
+}
+@media only screen and (max-width: 768px){
+    .blogs img{
+        height: 80%;
+    }
+    .instgram{
+        margin-left: 12%;
+    }
+}

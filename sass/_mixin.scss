@@ -1,0 +1,6 @@
+@mixin roundedImage($width:80px) {
+    width: $width;
+    height: $width;
+    border-radius: 50%;
+    object-fit: cover;
+}

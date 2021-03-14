@@ -1,0 +1,137 @@
+@import 'mixin';
+@import 'base';
+
+
+.review__bgimg{
+    opacity: .4;   
+}
+.review{
+    position: relative;
+& h3::before{
+    left: 37%;
+    width: 70px;
+}
+    .review__content__header{
+        position: absolute;
+         top: 18%;
+         left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .review__left__content{
+        position: absolute;
+        top: 64%;
+        left: 40%;
+       transform: translate(-50%, -50%);
+    }
+
+    .review__right__content{
+        position: absolute;
+      top: 43%;
+        left: 55%;
+       transform: translate(-10%, -10%);
+    }
+    & h6::before{
+        content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background-color: $pink;
+    display: inline-block;
+    margin-top: 6%;
+    }
+    .review__left__content h6::before{
+       
+     margin-top: 4%;
+    } 
+}
+    .review__content__header h3::before{
+        margin: {
+            top: 20%;       
+        };
+
+
+        
+    }
+    .review__content img{
+    @include roundedImage;
+    }
+    
+
+    @media only screen and (max-width:768px){
+        .review__content__header{
+            h3{
+                font-size: 20px;
+            }
+            h4{
+                font-size: 18px;
+                margin-left: 10%;
+            }
+            h3::before{
+                width: 40px;
+                height: 2px;
+                left: 49%;
+                
+            }
+        }
+        .review__content img{
+            @include roundedImage;
+            width: 40px;
+            height: 40px;
+            }
+            .review__right__content{
+                display: none;
+            }
+            .review{
+            .review__left__content{
+                position: absolute;
+              width: 100%;
+              top: 100%;
+              left: 60%;
+               transform: translate(-50%, -100%);
+               h5{
+                   font-size: 15px;
+               }
+            }
+       
+        }
+    }
+@media only screen and (max-width:575.98px){
+.review__left__content__none{
+    display: none;
+}
+.review__content__header{
+
+h3{
+    font-size: 17px;
+}
+h4{
+    font-size: 15px;
+    margin-left: 10%;
+}
+h3::before{
+    width: 40px;
+    height: 2px;
+    left: 40%;
+    margin-top: 12%;
+}
+}
+.review__left__content__small__screens{
+    width: 100vh;
+
+    transform: translate(-4%, -5%);
+    & img{
+        @include roundedImage;
+            width: 20px;
+            height: 20px;
+    }
+    & h5,h6,p{
+        font-size: 12px;
+    }
+   
+}
+
+    }
+
+
+
+

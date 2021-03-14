@@ -1,0 +1,116 @@
+.devices{
+  
+    .devices__content{
+        transform: translate(-50px,20vh);
+     }
+    .devices__bgimg {
+        opacity: .4;
+       position: relative;
+        }
+        .devices__img1{
+            position: absolute;         
+            margin-top: -1.2%;
+            left: 35%;
+            transform: translate(-50px,-100%);
+            & img{
+                height: 400px;
+            }
+        }
+        .devices__img2{
+            position: absolute;  
+            left: 53%;         
+            transform: translate(-50px,-80%);
+              & img{
+               height: 300px;
+                    }
+        }
+       
+
+}
+@media only screen and (max-width: 1053px) {
+    .devices{
+    .devices__img1{
+                  
+        margin-top: -1.5%;
+        left: 30%;
+        transform: translate(-40px,-100%);
+        & img{
+        height: 300px;
+    }
+    
+    }
+    .devices__img2{ 
+        left: 50%;         
+        transform: translate(-40px,-80%);
+          & img{
+           height: 230px;
+                }
+    }  
+}}
+@media only screen and (max-width: 800px) {
+    .devices{
+        .devices__content{
+        
+            h3{
+                font-size: 20px;
+            }
+            h4{
+                font-size: 18px;
+                margin-left: 10%;
+            }
+            & h3::before{
+                width: 40px;
+                height: 2px;
+                left: 49%;
+                
+            }
+             transform: translate(1%,8vh);
+         }
+        .devices__img1{
+                  
+            margin-top: -2%;
+            left: 25%;
+            transform: translate(-40px,-100%);
+            & img{
+            height: 200px;}
+        }
+        .devices__img2{ 
+            left: 50%;         
+            transform: translate(-40px,-80%);
+              & img{
+               height: 150px;
+                    }
+        }
+    }
+   
+    
+}
+@media only screen and (max-width: 600px){
+.devices{
+    .devices__img1{
+        display: none;
+    }
+    .devices__content{
+        
+        h3{
+             font-size: 17px;
+            // display: none;
+
+        }
+        h4{
+            font-size: 15px;
+            margin-left: 10%;
+        }
+        transform: translate(0px,15vh);
+    }
+    .devices__img2{ 
+        left: 30%;         
+        transform: translate(-40px,-100%);
+          & img{
+           height: 130px;
+                }
+    }
+}
+}
+
+

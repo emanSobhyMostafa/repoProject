@@ -1,0 +1,24 @@
+@import 'var';
+
+.numbers {
+    background-color: $primary;
+    color: $white;
+
+    padding: {
+        top: 5%;
+        bottom: 5%;
+    }
+
+    margin: {
+        top: 7%;
+        bottom: 6%;
+
+    }
+
+    h2 {
+        font-size: 72px;
+    }
+    p {
+        color: $white
+    }
+}

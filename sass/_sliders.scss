@@ -1,0 +1,50 @@
+@import 'mixin';
+.autoplay {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+}
+.team__slider {
+    margin: {
+        top: 8%;
+        bottom: 8%
+    }
+}
+
+
+.sliders {
+    position: relative;
+    color: $white;
+
+    .slider__overlay {
+        @extend %beforHover;
+    }
+    img:hover {
+        opacity: .2;
+      
+    }
+
+    &:hover .slider__overlay {
+        opacity: 1;
+color:#f38a81 ;
+
+    }
+}
+.media__slider1{
+    margin-top: 1%;
+    & img{
+        height: 40px;
+    }
+    & p{
+        width: 100vh;
+    }
+}
+.media__slider2{
+    & img{
+         @include roundedImage;
+        
+    }
+}
+.slider__icon{
+    color: $primary;
+}

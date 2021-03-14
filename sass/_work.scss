@@ -1,0 +1,28 @@
+.img3 {
+    margin-top: 28%;
+}
+.work__overlay{
+    position: relative;
+     .work__overlay__content{
+       @extend  %beforHover;
+
+     }
+    & img:hover{
+        opacity: .3;
+
+    }
+    img:hover .work__overlay__content{
+        opacity: 1;    
+    } 
+}
+
+@media only screen and (min-width:991px){
+    .d__large__none{
+        display: none;
+    }
+}
+  @media only screen and (max-width:991px){
+ .d__meduim__none{
+     display: none;
+ }
+  } 

@@ -1,0 +1,29 @@
+@import 'var';
+
+.navbar-nav {
+    margin-left: 30%;
+ 
+
+}
+
+.navbar-nav a:hover {
+    color: $secondary;
+}
+.navbar-nav a:focus{
+    color: $secondary;
+}
+
+.nav a {
+    color: $white;
+}
+
+.nav {
+    color: $white;
+
+    .logo {
+        font: {
+            size: 30px;
+            weight: 700
+        }
+    }
+}
