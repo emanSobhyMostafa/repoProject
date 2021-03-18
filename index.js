@@ -1,9 +1,9 @@
 $(document).ready(function () {
   $(".autoplay").slick({
-    prevArrow:
-      '<button class="image-prev w-30 w-md-40 w-lg-50 h-25 h-lg-50 h-md-40 border-0 bg-bfp-primary position-absolute rotate180"></button>',
-    nextArrow:
-      '<button class="image-next w-30 w-md-40 w-lg-50 h-25 h-lg-50 h-md-40 border-0 bg-bfp-primary position-absolute "></button>',
+    // prevArrow:
+    //   '<button class="image-prev w-30 w-md-40 w-lg-50 h-25 h-lg-50 h-md-40 border-0 bg-bfp-primary position-absolute rotate180"></button>',
+    // nextArrow:
+    // '<button class="image-next w-30 w-md-40 w-lg-50 h-25 h-lg-50 h-md-40 border-0 bg-bfp-primary position-absolute "></button>',
     autoplay: true,
     autoplaySpeed: 1500,
     arrows: false,
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(document).scrollTop() > 650) {
+    if ($(document).scrollTop()) {
       $(".nav").css("background-color", "gray");
     } else {
       $(".nav").css("background-color", "transparent");
@@ -82,4 +82,8 @@ $(document).ready(function () {
       },
     ],
   });
+});
+
+$(".navbar-toggler").click(function () {
+  $("nav").toggleClass("bg-secondary");
 });
