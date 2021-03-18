@@ -55,7 +55,7 @@ $(document).ready(function () {
   $(".multi").slick({
     responsive: [
       {
-        breakpoint: 1400,
+        breakpoint: 9999,
         settings: "unslick",
       },
       {
