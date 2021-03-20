@@ -79,7 +79,11 @@ img {
     width: 100%;
     object-fit: contain;
 }
-
+@media only screen and (max-width: 1240px) {
+    h3::before {
+        margin-top: 4%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     h1 {
